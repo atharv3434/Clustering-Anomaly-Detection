@@ -36,48 +36,6 @@ npm start          # → http://localhost:3000
 
 ---
 
-## 📁 Project Structure
-
-```
-cluster-anomaly/
-├── backend/
-│   ├── src/
-│   │   ├── server.js               # Express entry point
-│   │   ├── algorithms/
-│   │   │   ├── kmeans.js           # K-Means clustering
-│   │   │   ├── dbscan.js           # DBSCAN clustering
-│   │   │   ├── isolationForest.js  # Isolation Forest
-│   │   │   ├── zscore.js           # Z-Score anomaly detection
-│   │   │   └── pca.js              # PCA dimensionality reduction
-│   │   ├── api/
-│   │   │   └── routes.js           # All API routes
-│   │   └── utils/
-│   │       ├── dataParser.js       # CSV / JSON parser
-│   │       └── stats.js            # Statistical helpers
-│   ├── tests/
-│   │   └── algorithms.test.js      # Jest unit tests
-│   └── package.json
-└── frontend/
-    ├── src/
-    │   ├── App.jsx
-    │   ├── pages/
-    │   │   ├── Home.jsx
-    │   │   ├── ClusterPage.jsx
-    │   │   └── AnomalyPage.jsx
-    │   ├── components/
-    │   │   ├── ScatterPlot.jsx     # D3 scatter plot
-    │   │   ├── DataUpload.jsx      # CSV upload
-    │   │   ├── AlgoConfig.jsx      # Algorithm settings
-    │   │   ├── ResultsPanel.jsx    # Stats summary
-    │   │   └── Navbar.jsx
-    │   ├── hooks/
-    │   │   └── useApi.js           # API calls
-    │   └── utils/
-    │       └── colors.js           # Cluster color palette
-    └── package.json
-```
-
----
 
 ## 🌐 API Endpoints
 
